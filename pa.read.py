@@ -1,11 +1,11 @@
--
+"""
 假設 csv 檔案中的內容是
 date,sales
 2024-01-01,100
 2024-01-02,120
----
+"""
 
---
+"""
 DataFrame 物件內部有很多屬性
 │
 ├── index (RangeIndex 0,1,2,...)
@@ -15,9 +15,9 @@ DataFrame 物件內部有很多屬性
 ├── dtypes
 ├── values
 └── methods (head, mean, etc.)
----
+"""
 
---
+"""
 data = pa.read_csv("scale.csv")
 #Step 01 有一個檔案名為 "scale.csv" 被放在硬碟裡，此時不在記憶體當中，目前都還是一個靜態檔案
 #Step 02 當程式碼執行 data = pd.read_csv("sales.csv") 會發生三件事情
@@ -25,9 +25,9 @@ data = pa.read_csv("scale.csv")
 #Step 04 此時 Pandas 套件會自動在「記憶體」中建立一個 DataFrame 物件，並 1.解析逗號 2.建立欄位名稱 3.建立資料列 4.建立 index 等
 #Step 05 Python 的變數不是用來儲存資料，而是用來指向物件，假設當初所建立之 DataFrame 物件占用記憶體的位址是 0x1000 
 #Step 06 則宣告的 data 之變數會被綁定在這個物件上面
----
+"""
 
---
+"""
 當執行 data = pa.read_csv("scale.csv") 時，會發生
 1.讀取第一行，也就是檔案中的 date,sale，此時 date 與 sales 的資料型態為 Object(字串)
 2.程式碼 data = pd.read_csv("sales.csv", parse_dates=["date"], index_col="date")
@@ -55,19 +55,4 @@ data = pa.read_csv("scale.csv")
       └── date 已不存在於 columns（成為 index）
 8.做完這些都不會改變到內部的變數 data，只改變 read_csv 建立DataFrame 物件的內部結構
 ⚠資料型別轉換應該在結構調整之前
----
-
--
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
