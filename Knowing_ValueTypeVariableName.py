@@ -11,17 +11,17 @@
 """
 型態
 Python 基本常見的型態
-        "型態"              是否可改變
-bool                           否
-int                            否 
-float                          否
-complex (複數)                 否
-str                            否
-list (串列)                    是
-tuple                          否
-bytes                          否
-bytearray                      是
-set (集合)                     是
-frozenset (不可變集合)          否 
-dict (字典)                    是
+        "型態"              是否可改變       範例
+bool                           否           True, False
+int                            否           47, 50000 25_000
+float                          否           3.14, 2.7e5
+complex (複數)                 否           3j, 5 + 9j
+str                            否           'alas', "alack", '''a verse attack'''
+list (串列)                    是           ['Winken', 'Nod','Dlinken']
+tuple                          否           (2,4,8)
+bytes                          否           b'ab\xff
+bytearray                      是           bytearray(...)
+set (集合)                     是           set([3,5,7])
+frozenset (不可變集合)          否          forzenset(['Elsa', 'Otto'])
+dict (字典)                    是           {'game':'bingo' , 'dog':'dingo' , 'drummer':'Ringo'}
 
