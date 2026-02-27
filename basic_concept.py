@@ -6,7 +6,7 @@ DataFrame 物件是「二維的資料結構」內部有很多屬性
 │
 ├── index
 ├── columns
-├── dtypes
+├── dtypes 
 ├── values
 └── methods (head, mean, etc.)
 ---
