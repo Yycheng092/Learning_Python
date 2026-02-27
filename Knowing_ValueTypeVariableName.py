@@ -24,4 +24,54 @@ bytearray                      是           bytearray(...)
 set (集合)                     是           set([3,5,7])
 frozenset (不可變集合)          否          forzenset(['Elsa', 'Otto'])
 dict (字典)                    是           {'game':'bingo' , 'dog':'dingo' , 'drummer':'Ringo'}
+這邊的可變與不可變是指，由於 python 是強定型(strongly typed)的，意思是改的是「物件本身」，不是改「變數名稱」
+-可變（mutable）＝物件內容可以直接被改
+-不可變（immutable）＝物件內容不能被改，只能產生新物件
+"""
+
+"""
+賦值
+在 python 中我們可以用 = 將一個值指派給一個變數，也就是將右邊的值指派給左邊的變數
+"""
+
+"""
+變數
+"變數 = 物件"
+在 python 中「變數僅代表名稱」不代表位置，這點與其他多個電腦語言不同
+在 python 中若想要了解一個變數的型態，可以使用 print(type(...))
+在 python 中可以將一個值指派給多個變數名稱
+"""
+
+"""
+型態可變與不可變的重要性
+a = [1, 2, 3]，發生的事情其實是：a ───►  [1, 2, 3]，a 只是「指向」那個物件。
+👉同一個物件被修改，沒有產生新物件這叫「可變」
+s = "hello"，s = s + " world"，發生的事情是：
+第一步：s ───►  "hello"
+第二步：建立新物件 "hello world"，s ───►  "hello world"
+此時沒有任何變數再指向 "hello"，所以它的 reference count 會變成 0，所以Python 會回收它
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
