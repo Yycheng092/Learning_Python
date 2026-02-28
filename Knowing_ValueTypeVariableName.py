@@ -52,7 +52,10 @@ s = "hello"，s = s + " world"，發生的事情是：
 此時沒有任何變數再指向 "hello"，所以它的 reference count 會變成 0，所以Python 會回收它
 """
 
-
+"""
+布林值
+在布林值中只要是非 0 則皆為 True ;若出現 0 or 0.0 及 False 則為 False
+"""
 
 
 
