@@ -1,6 +1,8 @@
 """
 在 Python 中 module 就是一個 .py 檔案
 只要一個 Python 檔案，可以被其他程式 import，那它就是一個 module
+但能被 import 的不一定是 module，也可能是 package
+一個 package 一定存在一隻初始化的 .py，__init__.py 這隻檔案
 
 在模組中裡面通常可以放  1.variable 2.function 3.class(物件) 
 
