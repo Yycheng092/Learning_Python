@@ -1,7 +1,11 @@
--
+"""
 Series 是 1D  
 DataFrame 是 2D，可以理解為需要同時擁有 行 * 列 的表格才能找到對應的值
--
+"""
+
+"""
+class、instance、string、int、list、dict、function、DataFrame，這些全部都可以稱為物件，但變數不是
+
 DataFrame 物件是「二維的資料結構」內部有很多屬性
 │
 ├── index
@@ -9,7 +13,7 @@ DataFrame 物件是「二維的資料結構」內部有很多屬性
 ├── dtypes 
 ├── values
 └── methods (head, mean, etc.)
----
+"""
 
 -
 str 與 list 的差別
